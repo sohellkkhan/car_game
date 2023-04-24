@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ 
+}
+body{
+
+    height: 100vh;
+}
+
+.hide{
+    display:none;
+}
+
+.car{
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+  
+}
+
+
+
+.startscreen{
+    margin-left: 18%;
+    padding: 220px;
+}
+/*.cargame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}*/
+
+.gamearea{
+    height: 100vh;
+    width: 400px;
+    margin: auto;
+    background-color: rgb(81, 97, 100);
+    position: relative; 
+   overflow: hidden;
+}
+.lines{
+    width: 20px;
+    height: 100px;
+    background-color: white;
+    margin-left: 195px;
+   
+}
+
+
+/*==================================*/
+.lines{
+    position: relative;
+    background-color: #333;
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+  }
+  .lines:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 1200px;
+    border-right: 10px dashed #fff;
+    top: -320px;
+    transition: all 2s ease;
+    animation: drive 5s infinite linear;
+  }
+  
+  @keyframes drive{
+    0%{
+      top: -320px;
+    }
+    50%{
+      top: -160px;
+    }
+    75%{
+      top: -80px;
+    }
+    100%{
+      top: 0;
+    }
+  }
